@@ -10,6 +10,7 @@ import MapKit
 
 struct SearchMapView: View {
   // MARK: - Properties
+  // * RegionModel
   @ObservedObject private var regionModel = RegionModel(
     region: MKCoordinateRegion(
       center: CLLocationCoordinate2D(
@@ -22,6 +23,7 @@ struct SearchMapView: View {
     )
   )
   
+  // ** Properties
   @Binding var results: [Vacation]
   @Binding var selection: Int
   
@@ -32,20 +34,20 @@ struct SearchMapView: View {
       annotationItems: !results.isEmpty ? results[selection].places : []) { place in
         MapPin(coordinate: place.coordinate)
       }
-      .onAppear { findCenter() }
+      .onAppear { centerMap() }
       .onChange(of: selection, perform: { _ in
-        findCenter()
+        centerMap()
       })
       .onChange(of: results, perform: { _ in
-        findCenter()
+        centerMap()
       })
       .ignoresSafeArea(edges: .horizontal)
   }
   
-  /// Centers the map on the first place in the vacation.places array.
-  func findCenter() {
-    // For this demo, we are setting the map center to the first place on the vacation for simplicity, because we know all the vacations are in a single state.
-    // There is also a way to determine the center of all the places in the array, but that's overly complex for this simple tutorial.
+  // MARK: - Methods
+  /// * Centers the map on the first place in the vacation.places array.
+  func centerMap() {
+    // We are setting the map center to the first place on the vacation for simplicity, because we know all the vacations are in a single state.
     if !results.isEmpty, let place = results[selection].places.first {
       regionModel.region.center = place.coordinate
       regionModel.region.span = MKCoordinateSpan(
@@ -56,6 +58,7 @@ struct SearchMapView: View {
   }
 }
 
+// MARK: - Preview
 struct SearchMapViewPreviews: PreviewProvider {
   static var previews: some View {
     SearchMapView(results: .constant([vacation5]), selection: .constant(0))

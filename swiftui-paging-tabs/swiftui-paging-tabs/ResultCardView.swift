@@ -18,9 +18,11 @@ struct ResultCardView: View {
         .resizable()
         .renderingMode(.original) // So pics will have color
         .aspectRatio(contentMode: .fit)
-        .frame(width: 150)
-        .padding()
+        .frame(maxWidth: 200, maxHeight: 200)
+        .padding(2)
         .background(Color.gray.opacity(0.15)) // For contrast
+      
+      Spacer()
       
       VStack(alignment: .leading) {
         Text(vacation.name)
@@ -31,15 +33,15 @@ struct ResultCardView: View {
         }
         
         Spacer()
+        
       } //: VStack
-      .padding()
-      
     } //: HStack
-    .padding(.leading)
-    .frame(maxHeight: 200)
+    .frame(maxHeight: 200) // Ensures the > image is centered
+    
   }
 }
 
+// MARK: - Preview
 struct ResultCardView_Previews: PreviewProvider {
   static var previews: some View {
     ResultCardView(vacation: vacation7)

@@ -23,14 +23,13 @@ struct ContentView: View {
           .padding(.horizontal)
         
         // * Map
-        SearchMapView(results: $results, selection: $selection)
+        ResultMapView(results: $results, selection: $selection)
           .frame(maxHeight: UIScreen.main.bounds.height/3)
         
         // * Results
         SearchResultsView(results: $results, selection: $selection)
           .padding(.horizontal)
         
-        // ** Spacer
         Spacer()
         
       } //: VStack
@@ -42,6 +41,7 @@ struct ContentView: View {
     } //: Navigation View
     // ** NavView Style
     .navigationViewStyle(.stack)
+    
   }
 }
 

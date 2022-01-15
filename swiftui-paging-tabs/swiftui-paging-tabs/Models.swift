@@ -27,8 +27,9 @@ struct Vacation: Identifiable, Equatable, Hashable {
   let places: [Place]
 }
 
+// ** Region Model
 /// An observable region so the map will automatically update to reflect the search result locations.
-class RegionModel: ObservableObject {
+class MapModel: ObservableObject {
   @Published var region: MKCoordinateRegion
   
   init(region: MKCoordinateRegion)

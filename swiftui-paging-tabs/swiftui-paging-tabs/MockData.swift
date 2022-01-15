@@ -130,3 +130,15 @@ var vacations: [Vacation] = [
 
 // Disclaimer: I have no affiliation with the listed locations.
 // I have changed their names because I do not have permission to use their trademarks.
+
+// MARK: - Default Map Location
+import MapKit
+let defaultRegion = MKCoordinateRegion(
+  center: CLLocationCoordinate2D(
+    latitude: 39.8333,
+    longitude: -98.5833),
+  span: MKCoordinateSpan(
+    latitudeDelta: 35,
+    longitudeDelta: 35
+  )
+)

@@ -13,7 +13,7 @@
 		BABCCF50278F81F100613269 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABCCF4F278F81F100613269 /* Preview Assets.xcassets */; };
 		BABCCF57278F828500613269 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF56278F828500613269 /* Models.swift */; };
 		BABCCF5B278F83E500613269 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF5A278F83E500613269 /* SearchBarView.swift */; };
-		BABCCF5D278F83F700613269 /* SearchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF5C278F83F700613269 /* SearchMapView.swift */; };
+		BABCCF5D278F83F700613269 /* ResultMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF5C278F83F700613269 /* ResultMapView.swift */; };
 		BABCCF5F278F840C00613269 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF5E278F840C00613269 /* SearchResultsView.swift */; };
 		BABCCF61278F856600613269 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF60278F856600613269 /* MockData.swift */; };
 		BABCCF63278F8A8900613269 /* ResultCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCCF62278F8A8900613269 /* ResultCardView.swift */; };
@@ -28,7 +28,7 @@
 		BABCCF4F278F81F100613269 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BABCCF56278F828500613269 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		BABCCF5A278F83E500613269 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		BABCCF5C278F83F700613269 /* SearchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapView.swift; sourceTree = "<group>"; };
+		BABCCF5C278F83F700613269 /* ResultMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMapView.swift; sourceTree = "<group>"; };
 		BABCCF5E278F840C00613269 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		BABCCF60278F856600613269 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		BABCCF62278F8A8900613269 /* ResultCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCardView.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				BABCCF48278F81F000613269 /* swiftui_paging_tabsApp.swift */,
 				BABCCF4A278F81F000613269 /* ContentView.swift */,
 				BABCCF5A278F83E500613269 /* SearchBarView.swift */,
-				BABCCF5C278F83F700613269 /* SearchMapView.swift */,
+				BABCCF5C278F83F700613269 /* ResultMapView.swift */,
 				BABCCF5E278F840C00613269 /* SearchResultsView.swift */,
 				BABCCF62278F8A8900613269 /* ResultCardView.swift */,
 				BABCCF56278F828500613269 /* Models.swift */,
@@ -164,7 +164,7 @@
 				BABCCF63278F8A8900613269 /* ResultCardView.swift in Sources */,
 				BABCCF65278F8D6700613269 /* Helpers.swift in Sources */,
 				BABCCF57278F828500613269 /* Models.swift in Sources */,
-				BABCCF5D278F83F700613269 /* SearchMapView.swift in Sources */,
+				BABCCF5D278F83F700613269 /* ResultMapView.swift in Sources */,
 				BABCCF61278F856600613269 /* MockData.swift in Sources */,
 				BABCCF49278F81F000613269 /* swiftui_paging_tabsApp.swift in Sources */,
 			);

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ResultCardView: View {
   // MARK: - Properties
-  var vacation: Vacation
+  let vacation: Vacation
   
   // MARK: - View
   var body: some View {
     HStack(alignment: .top) {
+      // * Image
       Image(systemName: vacation.imageName)
         .resizable()
         .renderingMode(.original) // So pics will have color
@@ -25,9 +26,11 @@ struct ResultCardView: View {
       Spacer()
       
       VStack(alignment: .leading) {
+        // * Vacation Name
         Text(vacation.name)
           .bold()
         
+        // * Places
         ForEach(vacation.places, id: \.self) { place in
           Text(place.name)
         }
@@ -44,6 +47,7 @@ struct ResultCardView: View {
 // MARK: - Preview
 struct ResultCardView_Previews: PreviewProvider {
   static var previews: some View {
+    // ** Preview Properties
     ResultCardView(vacation: vacation7)
       .previewLayout(.sizeThatFits)
   }

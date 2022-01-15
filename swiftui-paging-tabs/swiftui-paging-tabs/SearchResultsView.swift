@@ -15,7 +15,7 @@ struct SearchResultsView: View {
   var body: some View {
     VStack(alignment: .leading) {
       // Text
-      Text("Search Results")
+      
       
       Divider()
       

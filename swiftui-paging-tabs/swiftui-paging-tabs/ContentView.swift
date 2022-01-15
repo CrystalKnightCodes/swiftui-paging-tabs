@@ -17,13 +17,13 @@ struct ContentView: View {
     NavigationView {
       VStack(alignment: .center) {
         // Search Bar
-        
+        SearchBarView()
         
         // Map
-        
+        SearchMapView()
         
         // Results
-        
+        SearchResultsView()
         
         Spacer()
         

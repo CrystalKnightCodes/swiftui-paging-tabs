@@ -15,7 +15,7 @@ struct SearchBarView: View {
   var body: some View {
     VStack(alignment: .center) {
       // Text Field
-      Text("Search Bar")
+      
       
     } //: VStack
   }

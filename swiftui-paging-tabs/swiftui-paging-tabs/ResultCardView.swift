@@ -9,34 +9,28 @@ import SwiftUI
 
 struct ResultCardView: View {
   // MARK: - Properties
-  var vacation: Vacation
+
   
   // MARK: - View
   var body: some View {
     HStack(alignment: .top) {
-      Image(systemName: vacation.imageName)
-        .resizable()
-        .renderingMode(.original) // So pics will have color
-        .aspectRatio(contentMode: .fit)
-        .frame(maxWidth: 200, maxHeight: 200)
-        .padding(2)
-        .background(Color.gray.opacity(0.15)) // For contrast
+      // Image
+      
       
       Spacer()
       
       VStack(alignment: .leading) {
-        Text(vacation.name)
-          .bold()
+        // Vacation Name
+        Text("Result Card")
         
-        ForEach(vacation.places, id: \.self) { place in
-          Text(place.name)
-        }
+        // Places
+
         
         Spacer()
         
       } //: VStack
     } //: HStack
-    .frame(maxHeight: 200) // Ensures the > image is centered
+
     
   }
 }
@@ -44,7 +38,7 @@ struct ResultCardView: View {
 // MARK: - Preview
 struct ResultCardView_Previews: PreviewProvider {
   static var previews: some View {
-    ResultCardView(vacation: vacation7)
+    ResultCardView()
       .previewLayout(.sizeThatFits)
   }
 }

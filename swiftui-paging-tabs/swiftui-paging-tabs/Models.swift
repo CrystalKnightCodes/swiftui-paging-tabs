@@ -28,11 +28,6 @@ struct Vacation: Identifiable, Equatable, Hashable {
 }
 
 /// An observable region so the map will automatically update to reflect the search result locations.
-class RegionModel: ObservableObject {
-  @Published var region: MKCoordinateRegion
-  
-  init(region: MKCoordinateRegion)
-  {
-    self.region = region
-  }
-}
+
+
+

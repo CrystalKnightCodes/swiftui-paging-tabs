@@ -10,58 +10,28 @@ import MapKit
 
 struct SearchMapView: View {
   // MARK: - Properties
-  // * RegionModel
-  @ObservedObject private var regionModel = RegionModel(
-    region: MKCoordinateRegion(
-      center: CLLocationCoordinate2D(
-        latitude: 39.8333,
-        longitude: -98.5833),
-      span: MKCoordinateSpan(
-        latitudeDelta: 35,
-        longitudeDelta: 35
-      )
-    )
-  )
+  // RegionModel
+
   
-  // ** Properties
-  @Binding var results: [Vacation]
-  @Binding var selection: Int
+
+
   
   // MARK: - View
   var body: some View {
-    Map(
-      coordinateRegion: $regionModel.region,
-      annotationItems: !results.isEmpty ? results[selection].places : []) { place in
-        MapPin(coordinate: place.coordinate)
-      }
-      .onAppear { centerMap() }
-      .onChange(of: selection, perform: { _ in
-        centerMap()
-      })
-      .onChange(of: results, perform: { _ in
-        centerMap()
-      })
-      .ignoresSafeArea(edges: .horizontal)
+    // Map
+    Text("Map")
   }
   
   // MARK: - Methods
   /// * Centers the map on the first place in the vacation.places array.
-  func centerMap() {
-    // We are setting the map center to the first place on the vacation for simplicity, because we know all the vacations are in a single state.
-    if !results.isEmpty, let place = results[selection].places.first {
-      regionModel.region.center = place.coordinate
-      regionModel.region.span = MKCoordinateSpan(
-        latitudeDelta: 1.5,
-        longitudeDelta: 1.5
-      )
-    }
-  }
+
+  
 }
 
 // MARK: - Preview
 struct SearchMapViewPreviews: PreviewProvider {
   static var previews: some View {
-    SearchMapView(results: .constant([vacation5]), selection: .constant(0))
+    SearchMapView()
       .frame(height: 300.0)
       .previewLayout(.sizeThatFits)
   }

@@ -20,7 +20,7 @@ struct ContentView: View {
         SearchBarView()
         
         // Map
-        SearchMapView()
+        ResultMapView()
         
         // Results
         SearchResultsView()

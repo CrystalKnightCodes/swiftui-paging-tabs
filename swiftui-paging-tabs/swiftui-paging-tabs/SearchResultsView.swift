@@ -23,13 +23,15 @@ struct SearchResultsView: View {
       // Results
       // 1. Make sure there are results to display.
       
+      
         // TabView
+      
       
           // 2. Zip the results instead of enumerating them to avoid errors.
           // For explanation, see: https://stackoverflow.com/questions/59295206/how-do-you-use-enumerated-with-foreach-in-swiftui
       
-          // 3. Iterate through the zipped results.
       
+          // 3. Iterate through the zipped results.
       
       
                 // 4. Show a result card for each result.
@@ -38,28 +40,12 @@ struct SearchResultsView: View {
                 // 5. Let the user know there are more cards, when appropriate
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       // MAGIC!
       
       
 
       // 6. If there are no results, let the user know.
+      
       
     } //: Main VStack
   }

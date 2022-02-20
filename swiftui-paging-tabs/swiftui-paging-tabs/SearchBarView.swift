@@ -16,6 +16,7 @@ struct SearchBarView: View {
     VStack(alignment: .center) {
       // Text Field
       
+      
         // Clear the search results before searching again.
       
       
@@ -34,15 +35,12 @@ struct SearchBarView: View {
     // 2. Check to see if the text is in the vacation name
   
   
-  
       // 3. If it isn't in the vacation name, search through each place
   
-  
-  
-  
-  
-  
+
     // 4. If the search text isn't found, nothing is returned.
+  
+  
 }
 
 // MARK: - Preview

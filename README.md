@@ -1,2 +1,2 @@
 # swiftui-paging-tabs
-Paginated views are a widely used design in many iOS apps. SwiftUI doesn't offer a completely out-of-the-box solution, but with some tweaking, tab views can be turned into a highly effective structure for showing a paginated collection. In this presentation, we'll dive into the modifications necessary for the tab views, and take a look at the basic property wrappers and how they can help us solve this problem.
+Paginated views are a widely used design in many iOS apps. UIKit does this as a type of collection view, but SwiftUI uses tab views instead. In this presentation, we'll dive into modifying a tab view to be paginated, and take a look at the basic SwiftUI property wrappers.

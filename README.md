@@ -1,2 +1,4 @@
-# swiftui-paging-tabs
-Paginated views are a widely used design in many iOS apps. UIKit does this as a type of collection view, but SwiftUI uses tab views instead. In this presentation, we'll dive into modifying a tab view to be paginated, and take a look at the basic SwiftUI property wrappers.
+# Turning the Page with SwiftUI
+This tutorial will walk you through creating a simple SwiftUI project that demonstrates paging tab views and basic property wrappers.  This tutorial is ideal for developers who have basic familiarity with Swift, GitHub, and Xcode, but are new to SwiftUI. 
+
+

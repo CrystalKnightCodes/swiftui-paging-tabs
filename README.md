@@ -5,6 +5,6 @@ The main branch has the starter project.  The completed project can be found in 
 
 Original Medium article: [How to Create a SwiftUI Paging Tab View](https://medium.com/p/4587c19bcffb)
 
-Presentation hosted by the Xcoders at [Underdog Devs](https://www.underdogdevs.org) on 3/31/22 at Echelon Fitness in Orlando. (Link TBD)
+[Presentation](https://www.eventbrite.com/e/ud-xcoders-the-new-one-tickets-304190982417?aff=ebdsoporgprofile) hosted by the Xcoders at [Underdog Devs](https://www.underdogdevs.org) on 3/31/22 at Echelon Fitness in Orlando.
 
 

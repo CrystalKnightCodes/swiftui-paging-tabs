@@ -30,7 +30,7 @@ struct ResultCardView: View {
         
       } //: VStack
     } //: HStack
-
+    .frame(maxHeight: 200)  
     
   }
 }

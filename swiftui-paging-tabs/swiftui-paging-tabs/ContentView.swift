@@ -28,10 +28,12 @@ struct ContentView: View {
         Spacer()
         
       } //: VStack
-
+      .ignoresSafeArea(.keyboard, edges: .bottom)
+      .navigationTitle("Vacation Search")
+      .navigationBarTitleDisplayMode(.inline)
       
     } //: Navigation View
-    
+    .navigationViewStyle(.stack)
     
   }
 }

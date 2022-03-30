@@ -37,7 +37,7 @@ struct SearchBarView: View {
   }
   
   // MARK: - Methods
-  // * Search Vactions
+  // * Search Vacations
   func findVacations() {
     // * 1. Look through all vacations using all(where:)
     // This creates an array of vacations that match the set criteria.
